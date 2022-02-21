@@ -1,0 +1,32 @@
+homeassistant:
+  customize:
+    sensor.afvalwijzer_today:
+      friendly_name: Vandaag
+    sensor.afvalwijzer_tomorrow:
+      friendly_name: Morgen
+    sensor.afvalwijzer_next_item:
+      friendly_name: Next pickup item
+    sensor.afvalwijzer_next_in_days:
+      friendly_name: Next pickup in days
+    input_boolean.waste_reminder:
+      icon: mdi:reminder
+
+    sensor.afvalwijzer_gft:
+      friendly_name: GFT
+      entity_picture: /local/afvalwijzer/GFT.png
+    sensor.afvalwijzer_papier:
+      friendly_name: Papier
+      entity_picture: /local/afvalwijzer/Papier.png
+    sensor.afvalwijzer_pmd:
+      friendly_name: PMD
+      entity_picture: /local/afvalwijzer/PMD.png
+    sensor.afvalwijzer_restafval:
+      friendly_name: Restafval
+      entity_picture: /local/afvalwijzer/Restafval.png
+
+
+sensor:
+  - platform: afvalwijzer
+    provider: mijnafvalwijzer
+    postal_code: !secret afvalwijzer_postcode
+    street_number: !secret afvalwijzer_huisnummer

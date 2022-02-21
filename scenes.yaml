@@ -1,0 +1,35 @@
+- id: '1644012227501'
+  name: Bedtime
+  entities:
+    media_player.huiskamer_mini:
+      volume_level: 0.4000000059604645
+      is_volume_muted: false
+      media_position_updated_at: '2022-02-04T22:03:50.515882+00:00'
+      app_id: CC1AD845
+      app_name: Default Media Receiver
+      entity_picture_local:
+      friendly_name: Huiskamer mini
+      supported_features: 152461
+      state: idle
+    media_player.keuken:
+      volume_level: 0.699999988079071
+      is_volume_muted: false
+      media_position_updated_at: '2022-02-04T22:03:51.433568+00:00'
+      app_id: CC1AD845
+      app_name: Default Media Receiver
+      entity_picture_local:
+      friendly_name: Keuken
+      supported_features: 152461
+      state: idle
+    switch.tradfri_outlet:
+      friendly_name: TRADFRI outlet
+      state: 'off'
+    light.led_lamp_hectar:
+      min_mireds: 250
+      max_mireds: 454
+      supported_color_modes:
+      - color_temp
+      friendly_name: Led-lamp hectar
+      supported_features: 35
+      state: 'off'
+  icon: mdi:bed

@@ -1,0 +1,11 @@
+kerk_time:
+  alias: Kerk time
+  sequence:
+  - service: media_player.media_play
+    data:
+      media_content_type: video
+      media_content_id: https://kerkondemand.nl/media/gkvhetlichtpunt/live
+    target:
+      device_id: b2614e8693527df66c8d1eafdbb896c1
+  mode: single
+  icon: mdi:church
